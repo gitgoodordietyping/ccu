@@ -1,0 +1,1 @@
+import './guest_house_info.html';
