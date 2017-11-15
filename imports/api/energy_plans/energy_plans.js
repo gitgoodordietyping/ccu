@@ -1,6 +1,4 @@
-import { Mongo } from 'meteor/mongo'
-
-EnergyPlans = new Mongo.Collection('energy_plans');
+export const EnergyPlans = new Mongo.Collection('energy_plans');
 
 EnergyPlanSchema = new SimpleSchema({
 	name: {
@@ -12,13 +10,14 @@ EnergyPlanSchema = new SimpleSchema({
 		label: "Description"
 	},
 	price: {
-		type: Double,
-		label: "Price"
-
+		type: Number,
+		label: "Price",
+		decimal: true
 	},
 	overprice: {
-		type: Double,
-		label: "Overprice"
+		type: Number,
+		label: "Overprice",
+		decimal: true
 	}
 });
 
