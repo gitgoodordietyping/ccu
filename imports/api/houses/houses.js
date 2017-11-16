@@ -1,16 +1,25 @@
 export const Houses = new Mongo.Collection('houses');
 
 HouseSchema = new SimpleSchema({
-	house_owner_ID: {
+	houseOwnerId: {
 		type: String,
-		label: "House Owner ID"
+		regEx: SimpleSchema.RegEx.Id,
+		label: "House Owner",
+		autoValue: function() {
+			return this.userId
+		}
 	},
 	address: {
 		type: String,
 		label: "Address"
 	},
-	subscriptions_ID: {
+	meter: {
+		type: Number,
+		label: "House Meter"
+	},
+	subscriptionsId: {
 		type: [String],
+		regEx: SimpleSchema.RegEx.Id,
 		label: "Subscriptions ID"
 	}
 });

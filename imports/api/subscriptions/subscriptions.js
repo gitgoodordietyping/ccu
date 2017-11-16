@@ -1,35 +1,33 @@
 export const Subscriptions = new Mongo.Collection('subscriptions');
 
-SubscriptionSchema = new SimpleSchema({
-	d_i: {
+SubscriptionsSchema = new SimpleSchema({
+	/*d_i: {
 		type: Date,
-		label: "Date_init"
+		label: "Date Init"
 	},
 	d_e: {
 		type: String,
-		label: "Date_end"
+		label: "Date End"
+	},*/
+	userId: {
+		type: String,
+		label: "User",
+		regEx: SimpleSchema.RegEx.Id
 	},
-	uid: {
-		type: Number,
-		label: "User_id",
-		decimal: False
+	houseId: {
+		type: String,
+		label: "House",
+		regEx: SimpleSchema.RegEx.Id
 	},
-	hid: {
-		type: Number,
-		label: "House_id",
-		decimal: False
-	}
-
-	pid: {
-		type: Number,
-		label: "Plan_id",
-		decimal: False
-	}
+	energyPlanId: {
+		type: String,
+		label: "Energy Plan",
+		regEx: SimpleSchema.RegEx.Id
+	},
 	lim: {
 		type: Number,
 		label: "Limit",
-		decimal: False
 	}
 });
 
-EnergyPlans.attachSchema( EnergyPlanSchema );
+Subscriptions.attachSchema( SubscriptionsSchema );

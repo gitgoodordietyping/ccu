@@ -11,19 +11,17 @@ UserSchema = new SimpleSchema({
 		label: "Age"
 	},
 	
-	energy_plan: {
-		type: EnergyPlanSchema,
-		label: "Energy Plan"
+	subscriptionId: {
+		type: String,
+		regEx: SimpleSchema.RegEx.Id,
+		label: "Subscription"
 	},
 		
-	house: {
-		type: HouseSchema,
+	houseId: {
+		type: String,
+		regEx: SimpleSchema.RegEx.Id,
 		label: "House"
 	},
-	
-	
-	
 });
-
 
 Users.attachSchema( UserSchema );
