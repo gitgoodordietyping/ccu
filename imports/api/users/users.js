@@ -15,19 +15,12 @@ UserSchema = new SimpleSchema({
 		type: EnergyPlanSchema,
 		label: "Energy Plan"
 	},
-	
-	//Depois de HouseSchema estar completo, type deve coincidir com o nome dado
-	
-	//house: {
-	//	type: HouseSchema,
-	//	label: "House"
-	//},
-	
-	
-	invited: { //verificar se -this- funciona 
-		type: this,
-		label: "Friend"
+		
+	house: {
+		type: HouseSchema,
+		label: "House"
 	},
+	
 	
 	
 });
