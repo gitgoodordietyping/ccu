@@ -6,16 +6,12 @@ import '../../ui/layouts/home_layout/HomeLayout.js';
 import '../../ui/layouts/main_layout/MainLayout.js';
 import '../../ui/pages/home/home.js';
 import '../../ui/pages/signup/signup.js';
-import '../../ui/pages/guest/guest_menu.js';
-import '../../ui/pages/guest/guest_houses.js';
-import '../../ui/pages/guest/guest_house_info.js';
-import '../../ui/pages/guest/guest_add_house.js';
-import '../../ui/pages/guest/guest_energy_plan.js';
-import '../../ui/pages/support/user_settings.js';
+import '../../ui/pages/dashboard/dashboard.js';
+import '../../ui/pages/energy_plan/energyPlanSelection.js';
+import '../../ui/pages/energy_plan/goingAway.js';
+import '../../ui/pages/payment/paymentSelection.js';
+import '../../ui/pages/support/userSettings.js';
 import '../../ui/pages/support/contacts.js';
-import '../../ui/pages/owner/owner_signup.js';
-import '../../ui/pages/owner/owner_menu.js';
-import '../../ui/pages/owner/owner_houses.js';
 
 
 // Set up all routes in the app
@@ -33,72 +29,45 @@ FlowRouter.route('/signup', {
   },
 });
 
-FlowRouter.route('/guest/', {
-  name: 'guest_menu',
+FlowRouter.route('/dashboard', {
+  name: 'dashboard',
   action() {
-    BlazeLayout.render('MainLayout', { main: 'guest_menu' });
+    BlazeLayout.render('MainLayout', { main: 'dashboard' });
   },
 });
 
-FlowRouter.route('/guest/guest_houses', {
-  name: 'guest_houses',
+FlowRouter.route('/energy_plan_selection', {
+  name: 'energy_plan_selection',
   action() {
-    BlazeLayout.render('MainLayout', { main: 'guest_houses' });
+    BlazeLayout.render('MainLayout', { main: 'energyPlanSelection' });
   },
 });
 
-FlowRouter.route('/guest/guest_houses/guest_house_info', {
-  name: 'guest_house_info',
+FlowRouter.route('/going_away', {
+  name: 'going_away',
   action() {
-    BlazeLayout.render('MainLayout', { main: 'guest_house_info' });
+    BlazeLayout.render('MainLayout', { main: 'goingAway' });
   },
 });
 
-FlowRouter.route('/guest/guest_add_house', {
-  name: 'guest_add_house',
+FlowRouter.route('/payment_selection', {
+  name: 'payment_selection',
   action() {
-    BlazeLayout.render('MainLayout', { main: 'guest_add_house' });
-  },
-});
-
-FlowRouter.route('/guest/guest_energy_plan', {
-  name: 'guest_energy_plan',
-  action() {
-    BlazeLayout.render('MainLayout', { main: 'guest_energy_plan' });
+    BlazeLayout.render('MainLayout', { main: 'paymentSelection' });
   },
 });
 
 FlowRouter.route('/user_settings', {
   name: 'user_settings',
   action() {
-    BlazeLayout.render('HomeLayout', { main: 'user_settings' });
+    BlazeLayout.render('MainLayout', { main: 'userSettings' });
   },
 });
 
 FlowRouter.route('/contacts', {
   name: 'contacts',
   action() {
-    BlazeLayout.render('HomeLayout', { main: 'contacts' });
+    BlazeLayout.render('MainLayout', { main: 'contacts' });
   },
 });
 
-FlowRouter.route('/owner_signup', {
-  name: 'owner_signup',
-  action() {
-    BlazeLayout.render('MainLayout', { main: 'owner_signup' });
-  },
-});
-
-FlowRouter.route('/owner', {
-  name: 'owner_menu',
-  action() {
-    BlazeLayout.render('MainLayout', { main: 'owner_menu' });
-  },
-});
-
-FlowRouter.route('/owner/owner_houses', {
-  name: 'owner_houses',
-  action() {
-    BlazeLayout.render('MainLayout', { main: 'owner_houses ' });
-  },
-});

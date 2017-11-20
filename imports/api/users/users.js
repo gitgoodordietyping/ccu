@@ -11,16 +11,16 @@ UserSchema = new SimpleSchema({
 		label: "Age"
 	},
 	
-	subscriptionId: {
+	accountId: {
 		type: String,
 		regEx: SimpleSchema.RegEx.Id,
-		label: "Subscription"
+		label: "Account"
 	},
 		
-	houseId: {
-		type: String,
+	housesId: {
+		type: [String],
 		regEx: SimpleSchema.RegEx.Id,
-		label: "House"
+		label: "Houses"
 	},
 });
 

@@ -1,0 +1,1 @@
+import './postPayment.html';

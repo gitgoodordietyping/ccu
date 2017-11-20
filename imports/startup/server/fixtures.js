@@ -7,16 +7,20 @@ Meteor.startup(() => {
   if (EnergyPlans.find().count() === 0) {
     const data = [
       {
-        name: 'Budget Pack',
+        name: 'Tourist Pack',
         desc: 'For the Outside Traveller',
         price: 10.00,
+        energy: 10,
         overprice: 1.00,
+        is_home: false
       },
       {
-        name: 'Super Pack',
-        desc: 'Premium Energy Experience',
-        price: 50.00,
+        name: 'Shared House',
+        desc: 'Sharing Energy Experience',
+        price: 40.00,
+        energy: 50,
         overprice: 0.50,
+        is_home: true
       },
     ];
 
