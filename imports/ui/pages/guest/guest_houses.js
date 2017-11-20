@@ -1,1 +1,0 @@
-import './guest_houses.html';
