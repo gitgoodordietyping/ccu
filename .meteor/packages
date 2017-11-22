@@ -28,6 +28,12 @@ aldeed:simple-schema
 accounts-ui
 accounts-password
 
+fortawesome:fontawesome
+stolinski:stylus-multi
+twbs:bootstrap
+sunkay:easy-side-menu
+
+
 autopublish
 meteortoys:allthings
 insecure
