@@ -1,3 +1,115 @@
 <template name="dashboard">
-	<h1> dashboard </h1>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+
+	<style>
+		body{
+			font-family: Raleway;
+    		padding: 30px;
+    		overflow: hidden;
+    		position: absolute;
+		}
+
+		html { overflow-y: scroll; }
+
+		.balance{
+			height: 10%;
+			width: auto;
+			margin-bottom: 20px;
+		}
+
+		#current_balance{
+			float: right;
+			text-align: center;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		.big {
+			font-size: 25px;
+		}
+
+		.medium {
+			font-size: 18px;
+		}
+
+		.small {
+			font-size: 12px;
+		}
+
+		.tiny {
+			font-size: 10px;
+		}
+
+		.box {
+			margin-top: 10px;
+		}
+
+		.inside-box {
+			margin-left: 60px;
+		}
+
+		.icon {
+			font-size: 50px;
+		}
+
+		.section {
+			margin-top: 20px;
+		}
+
+		a span {
+			margin-top: 10px;
+		}
+	</style>
+
+
+	<div class = "balance">
+		<img id = "fuel_meter" style="width: 50%;" src="/img/fuel_meter.png">
+
+		<div id = "current_balance">
+			<p class="medium" style="margin: 0;">Your current <br>Balance: </p>
+			<p class="big" style="color: #388E3C"><b>12,80 €</b></p>
+			<p class="small">(521 KWs)</p>
+			<a class="tiny" onclick = "location.href= '/payment_selection';"><u style="text-decoration-color:red;">Change Payment Method ></u></a>
+		</div>
+	</div>
+
+	<div>
+		<div class="section">
+			<p>Current Energy plan:</p>
+			<div class="box">
+				<i class="fa fa-bolt fa-lg icon" style="float: left;"></i>
+				<div class="inside-box">
+					<span class="medium" style="font-family: Raleway;">Tourist Pack</span>
+					<br>
+					<span class="small" style="font-family: Raleway;">1 Day left</span>
+				</div>
+			</div>
+			<a class="tiny" onclick = "location.href= '/energy_plan_selection';"><span style="float:right;">Change Energy Plan ></span></a>
+		</div>
+
+		<div class="section">
+			<p><br>My Home:</p>
+			<div class="box">
+				<i class="fa fa-home fa-3x icon" style="float: left;"></i>
+				<div class="inside-box">
+					<span class="medium" style="font-family: Raleway;">Rua da Prata, 3º Esq. Lisboa, 1000-440</span>
+				</div>
+			</div>
+			<a class="tiny" onclick = "location.href= '';"><span style="float:right;">Manage my houses ></span></a>
+		</div>
+
+		<div class="section">
+			<p><br>I'm staying at:</p>
+			<div class="box">
+				<i class="fa fa-plane fa-3x icon" style="color: #388E3C;float: left;"></i>
+				<div class="inside-box">
+					<span class="medium" style="font-family: Raleway;">94 Baker Street London, NW1 6XE</span>
+				</div>
+			</div>
+			<a class="tiny" onclick = "location.href= '';"><span style="float:right;">Check this stay ></span></a>
+		</div>
+	</div>
+
 </template>
