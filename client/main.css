@@ -382,6 +382,8 @@ h1 {
   font-variant: normal;
   font-weight: 700;
   line-height: 26.4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 p {
   font-family: Raleway;
@@ -408,8 +410,8 @@ h2 {
    border-radius: 25px;
    border: 2px solid #FF0000;
    padding: 10px;
-   width: 40%;
-   height: 100px;
+   width: 47%;
+   height: 70px;
    background: #E6E6E6;
 }
 
