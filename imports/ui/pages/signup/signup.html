@@ -1,3 +1,130 @@
 <template name="signup">
-	<h1> signup </h1>
+
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<style>
+	body{
+		font-family: 'Raleway';
+		font-size: 300%;
+		background-color:#D32F2F;
+	}
+
+
+	h1 {
+		color:white;
+		font-family: Raleway;
+	}
+
+	h3 {
+	color:white;
+	font-family: Raleway;
+    overflow: hidden;
+    text-align: center;
+	}
+	h3:before,
+	h3:after {
+		background-color:white;
+		content: "";
+		display: inline-block;
+		height: 1px;
+		position: relative;
+		vertical-align: middle;
+		width: 30%;
+	}
+	h3:before {
+		right: 0.5em;
+		margin-left: -50%;
+	}
+	h3:after {
+		left: 0.5em;
+		margin-right: -50%;
+	}
+	
+	div {
+		font-size: 100%;
+		font-family: Raleway;
+		line-height: 2.0
+	}
+	
+	label, input {
+		vertical-align: middle;
+		display: block;
+	}
+	
+	input {
+		font-size: 100%;
+		color: white;
+		outline: none;
+		border: none;
+		border-bottom: 2px solid white;
+		background-color: transparent;
+	}
+
+	label {
+		font-family: 'Raleway';
+		margin-bottom: 6%;
+		vertical-align: middle;
+	}
+	
+	p {
+		font-family: 'Raleway';
+		color:white;
+		font-size: 110%;
+		font-variant: normal;
+		font-weight: 400;
+		line-height: 20px;
+	}
+	
+	i {
+		color: white;
+		font-family: 'Raleway';
+	}
+	
+	
+	button{
+		background-color: transparent;
+		border:none;
+		font-size: 100%;
+		color: white;}
+	
+	::-webkit-input-placeholder { color: white; }
+	::-moz-placeholder {color: white; }
+	:-ms-input-placeholder { color: white; } 
+	:-o-input-placeholder { color: white; }
+</style>
+	
+	<h1 align="center"><img width="30%" height="30%" src="/img/html_insert.png"></h1>
+	
+	
+	<div align="center">
+		<p> Create an account: </p>
+		<form action="doit" id="doit" method="post">
+			<label>
+				<input color="white" id="usernname" name="username" type="text" placeholder="Username" />
+			</label>
+			<label>
+				<input id="email" name="email" type="text" placeholder="E-mail Address" />
+			</label>
+			<label>
+				<input id="password" name="password" type="text" placeholder="Password" />
+			</label>
+			<label>
+				<input id="confirm_password" name="confirm_password" type="text" placeholder="Confirm Password"/>
+			</label>
+		</form>
+		 <button onclick="window.location.href='../dashboard'" type="button"> GO ></button>
+	</div>
+	
+	<h3>or</h3>
+	
+	
+	<div style="margin-bottom: 7%" align="center">
+		<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i> <button type="button"> Login with facebook ></button>
+	</div>
+	
+	<div align="center">
+		<i class="fa fa-plug fa-2x" aria-hidden="true"></i> <button type="button"> Login with EDP ></button>
+	</div>
+
+
+
 </template>
