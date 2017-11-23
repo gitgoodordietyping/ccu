@@ -1,8 +1,15 @@
 <template name="menuNav">
 	<nav class="dark-primary-color">
+	<!--
+	Logo
+	--> 
 	  <span id="brand">
 	    <a href="" class="text-primary-color">E2GO</a>
 	  </span>
+
+	<!--
+	 big screen menu
+	-->
 	  <ul id="menu" >
 	    <li><a href="/dashboard" class="fa fa-dashboard fs-3 fw-6 flh-3"> Dashboard</a></li>
 	    <!--
@@ -17,7 +24,14 @@
 	    <!--
 	    -->
 	    <li><a href="/contacts" class="fa fa-question-circle  fs-3 fw-6 flh-3"> Help</a></li>
+	    <!--
+	    -->
+	    <li><a href="/" class="fa fa-sign-out fs-3 fw-6 flh-3"> Logout</a></li>
 	  </ul>
+	
+	<!--
+	the hamburguer 
+	-->
 
 	  <div id="toggle">
 	    <div class="span" id="one"></div>
@@ -26,6 +40,10 @@
 	  </div>
 
 	</nav>
+
+	<!-- 
+	small screen menu 
+	-->
 	<div id="resize">
 	  <ul id="menu">
 	    <li><a href="/dashboard" class="fa fa-dashboard fs-7 fw-6 flh-3"> Dashboard</a></li>
@@ -33,6 +51,7 @@
 	    <li><a href="" class="fa fa-home  fs-7 fw-6 flh-3"> My Houses</a></li>
 	    <li><a href="/user_settings" class="fa fa-cog  fs-7 fw-6 flh-3"> Settings</a></li>
 	    <li><a href="/contacts" class="fa fa-question-circle  fs-7 fw-6 flh-3"> Help</a></li>
+	    <li><a href="/" class="fa fa-sign-out  fs-7 fw-6 flh-3"> Logout</a></li>
 	  </ul>
 	</div>
 </template>

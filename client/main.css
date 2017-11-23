@@ -581,8 +581,10 @@ h2 {
     margin-right: 0px;
   }
   .h_center {
+    position: relative;
     text-align: center;
-    width: 60%;
+    width: 100%;
+    height: 100%;
     
   }
   .h_right{
