@@ -1,3 +1,48 @@
 <template name="firstDashboard">
-	<h1> first dashboard </h1>
+		
+	<div class = "balance">
+		<img id = "fuel_meter" style="width: 50%;" src="/img/ProfilePic.PNG">
+
+		<div id = "current_balance">
+			<p class="medium" style="margin: 0;">Your current <br>Balance: </p>
+			<p class="big" style="font-weight: bold;"><b>0 €</b></p>
+			<p class="small">(0 KWs)</p>
+			<a class="tiny" onclick = "location.href= '/payment_selection';"><u style="text-decoration-color:red;">Select a Payment Method ></u></a>
+		</div>
+	</div>
+
+	<div>
+		<div class="section">
+			<p class="medium">Choose an Energy Plan:</p>
+			<div class="box">
+				<a onclick = "location.href= '/energy_plan_selection';">
+					<i class="fa fa-bolt fa-lg icon" style="float: left; padding-top: 2%;"></i>
+					<div class="inside-box" style="padding-top: 3%;">
+						<span class="medium">For your own Home</span>
+					</div>
+				</a>
+			</div>
+			<div class="box">
+				<a onclick = "location.href= '/energy_plan_selection';">
+					<i class="fa fa-plane fa-lg icon" style="float: left; padding-top: 3%;"></i>
+					<div class="inside-box" style="padding-top: 3%;">
+						<span class="medium">For your Trip or Rental</span>
+					</div>
+				</a>
+			</div>
+		</div>	
+
+		<div class="section">
+			<p class="medium">Or edit your profile information:</p>
+			<div class="box">
+				<a onclick = "location.href= '/user_settings';">
+					<i class="fa fa-cog fa-lg icon" style="float: left; padding-top: 2%;"></i>
+					<div class="inside-box" style="padding-top: 3%;">
+						<span class="medium">Tourist Pack</span>
+					</div>
+				</a>
+			</div>
+		</div>	
+	</div>
+
 </template>

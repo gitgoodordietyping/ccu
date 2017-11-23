@@ -36,6 +36,13 @@ FlowRouter.route('/dashboard', {
   },
 });
 
+FlowRouter.route('/first_dashboard', {
+  name: 'firstDashboard',
+  action() {
+    BlazeLayout.render('MainLayout', { main: 'firstDashboard' });
+  },
+});
+
 FlowRouter.route('/energy_plan_selection', {
   name: 'energy_plan_selection',
   action() {
