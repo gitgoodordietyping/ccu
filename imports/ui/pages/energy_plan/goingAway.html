@@ -1,5 +1,5 @@
 <template name="goingAway">
-	<h1> <b> Going away from home? </b> </h1>
+	<h1> Going away from home? </h1>
 	<p style = "color:#000000;">
 		Join an <span style="color:#FF0000">Energy On The Go</span> house and pay the energy bill straight from the app!
 	</p>
@@ -10,12 +10,12 @@
 		  </form>
 	<h2> Ask your landlord or renter for the referal of your place. </h2>
 <!-- Calendars appear on icon press but selection is not getted. Needs JQ -->
-	<h1 style = "color:#000000;">
+	<p style = "color:#000000;">
 		From <span style="color:#FF0000">Date Begin</span>
 		<span id='clickableAwesomeFontForCalendar'> <button onclick="dateBegin()"><i class="fa fa-calendar"></i></button></span> to
 		<span style="color:#FF0000">Date End</span>
 		<span id='clickableAwesomeFontForCalendar'> <button onclick="dateEnd()"><i class="fa fa-calendar"></i></button> </span>
-	</h1>
+	</p>
 <!-- Calendar for begin date. -->
   <input id="datepickBegin" type="date" style="display:none;">
 	<script>
@@ -46,13 +46,11 @@
 
 	<p> The energy you spend during these days in this house will be deducted from your balance. </p>
 
-	<hr>
-
  <p> Low Balance? Charge your account: </p>
  <h2> Click the info button on each plan for detailed plan information.</h2>
 
 <!-- Selected pack name will appear below. Info icon not funcional as no screen is curently created -->
-	<p id="rcorners3" style="float: left">Tourist Pack 4€ <span style="font-size: 10px">(100MW)</span>
+	<p id="rcorners1" style="float: left" onclick="myFunction1()">Tourist Pack 4€ <span style="font-size: 10px">(100MW)</span>
 		<span id='clickableAwesomeFont'> <i class="fa fa-info-circle fa-lg"> </i> </span>
 		<br/>
 
@@ -61,11 +59,9 @@
 		    document.getElementById("selected_pack").innerHTML = "Tourist Pack";
 		}
 		</script>
-
-		<button type="button" onclick="myFunction1()" >Select</button>
 	</p>
 
-	<p id="rcorners3" style="float: right"> Month Long Stay 20€ <span style="font-size: 10px">(500MW)</span>
+	<p id="rcorners1" style="float: right" onclick="myFunction2()"> Month Long Stay 20€ <span style="font-size: 10px">(500MW)</span>
 		<span id='clickableAwesomeFont'> <i class="fa fa-info-circle fa-lg"> </i> </span>
 		<br/>
 
@@ -74,21 +70,15 @@
 		    document.getElementById("selected_pack").innerHTML = "Month Long Stay";
 		}
 		</script>
-
-		<button type="button" onclick="myFunction2()" >Select</button>
 	</p>
-
  <br/>
  <br/>
  <br/>
  <br/>
- <br/>
-
-	<h1> You have selected the <span style="color:#FF0000" id="selected_pack" >None Selected</span>.</h1>
-	<p style = "color:#000000;">
-		Confirm your selection to advance to the payment method.
-	</p>
+	<p> You have selected the <span style="color:#FF0000" id="selected_pack" >None Selected</span>.</p>
+	<p> Confirm your selection to advance to the payment method.	</p>
 	<h2>If you wish to pay the bill at the end of the month please change your account to Post-Payment mode.</h2>
+
 <!-- Confirm buttons lead to dashboard menu. -->
 	<button type="button" onclick="location.href = 'dashboard';"> Confirm and charge > </button>
 
