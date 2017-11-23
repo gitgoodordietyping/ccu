@@ -1,3 +1,136 @@
 <template name="energyPlanSelection">
-	<h1> energy plan selection </h1>
+
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+
+	<style>
+		body {
+		    font-family: 'Raleway';
+				font-size: 22px;
+		}
+		h1 {
+		font-family: Raleway;
+		font-size: 18px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 700;
+		line-height: 26.4px;
+		}
+		p {
+		font-family: Raleway;
+		font-size: 14px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 700;
+		line-height: 26.4px;
+		margin-top: 4px;
+	  margin-bottom: 4px;
+		}
+		h2 {
+		font-family: Raleway;
+		font-size: 10px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 700;
+		line-height: 26.4px;
+		margin-top: 2px;
+	  margin-bottom: 2px;
+		}
+
+		 #rcorners1 {
+		     border-radius: 25px;
+		     border: 2px solid #FF0000;
+		     padding: 10px;
+		     width: 40%;
+		     height: 100px;
+				 background: #E6E6E6;
+		}
+
+		 #clickableAwesomeFont {
+			 cursor: pointer
+		}
+	</style>
+
+	<h1> <b> Pick the best plan for your home </b> </h1>
+	<p style = "color:#000000;">
+		Each plan reflects the average energy consumption per month for different houses.
+	</p>
+	<h2>Click the info button on each plan for detailed information.</h2>
+
+	<p id="rcorners1" style="float: left">Family House 50€ <span style="font-size: 10px">(500MW)</span>
+		<span id='clickableAwesomeFont'> <i class="fa fa-info-circle fa-lg"> </i> </span>
+		<br/>
+
+		<script>
+		function myFunction1() {
+				document.getElementById("selected_pack").innerHTML = "Family House";
+		}
+		</script>
+
+		<button type="button" onclick="myFunction1()" >Select</button>
+	</p>
+
+	<p id="rcorners1" style="float: right"><span style="color:#FF0000">Small Flat</span> 20€ <span style="font-size: 10px">(100MW)</span>
+		<span id='clickableAwesomeFont'> <i class="fa fa-info-circle fa-lg"> </i> </span>
+		<br/>
+
+		<script>
+		function myFunction2() {
+				document.getElementById("selected_pack").innerHTML = "Small Flat";
+		}
+		</script>
+
+		<button type="button" style="margin-bottom: 200px" onclick="myFunction2()" >Select</button>
+	</p>
+
+	<p id="rcorners1" style="float: right">Shared House 30€ <span style="font-size: 10px">(250MW)</span>
+		<span id='clickableAwesomeFont'> <i class="fa fa-info-circle fa-lg"> </i> </span>
+		<br/>
+
+		<script>
+		function myFunction3() {
+				document.getElementById("selected_pack").innerHTML = "Shared House";
+		}
+		</script>
+
+		<button type="button" onclick="myFunction3()" >Select</button>
+	</p>
+
+	<p id="rcorners1" style="float: left">No Pack 30€ <span style="font-size: 10px">Pay per ammount of energy consumed at a fixed rate</span>
+		<span id='clickableAwesomeFont' > <i class="fa fa-info-circle fa-lg"> </i> </span>
+		<br/>
+
+		<script>
+		function myFunction4() {
+				document.getElementById("selected_pack").innerHTML = "No Pack";
+		}
+		</script>
+
+		<button type="button" onclick="myFunction4()" >Select</button>
+	</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+	<p>Tell us the address of your home:</p>
+			<form class="new-task">
+		        <input type="text" name="text" placeholder="Ex:Avenida da Liberdade..." />
+		  </form>
+	<h2> Ask your landlord or renter for the referal of your place. </h2>
+
+	<hr>
+
+	<h1> You selected the <span style="color:#FF0000" id="selected_pack" >None Selected</span>.</h1>
+	<p>The cost will be deducted from your balance <span style="color:#388E3C">(10.00€)</span> on a daily basis (0.65€ per day). </p>
+	<h2> Click the info button on each plan for detailed plan information.</h2>
+
+	<button type="button" onclick="location.href = 'dashboard';" >Confirm > </button>
+
 </template>
