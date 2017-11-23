@@ -5,7 +5,7 @@
 
 		<div id = "current_balance">
 			<p class="medium" style="margin: 0;">Your current <br>Balance: </p>
-			<p class="big" style="color: #388E3C"><b>12,80 €</b></p>
+			<p class="big" style="color: #388E3C;font-weight: bold;"><b>12,80 €</b></p>
 			<p class="small">(521 KWs)</p>
 			<a class="tiny" onclick = "location.href= '/payment_selection';"><u style="text-decoration-color:red;">Change Payment Method ></u></a>
 		</div>
@@ -13,37 +13,43 @@
 
 	<div>
 		<div class="section">
-			<p>Current Energy plan:</p>
-			<div class="box">
-				<i class="fa fa-bolt fa-lg icon" style="float: left;"></i>
-				<div class="inside-box">
-					<span class="medium" style="font-family: Raleway;">Tourist Pack</span>
-					<br>
-					<span class="small" style="font-family: Raleway;">1 Day left</span>
+			<p class="medium">Current Energy plan:</p>
+			<a onclick = "location.href= '/energy_plan_selection';">
+				<div class="box">
+					<i class="fa fa-bolt fa-lg icon" style="float: left; padding-top: 2%;"></i>
+					<div class="inside-box">
+						<span class="medium">Tourist Pack</span>
+						<br>
+						<span class="small">1 Day left</span>
+					</div>
 				</div>
-			</div>
+			</a>
 			<a class="tiny" onclick = "location.href= '/energy_plan_selection';"><span style="float:right;">Change Energy Plan ></span></a>
 		</div>
 
 		<div class="section">
-			<p><br>My Home:</p>
-			<div class="box">
-				<i class="fa fa-home fa-3x icon" style="float: left;"></i>
-				<div class="inside-box">
-					<span class="medium" style="font-family: Raleway;">Rua da Prata, 3º Esq. Lisboa, 1000-440</span>
+			<p class="medium">My Home:</p>
+			<a onclick = "location.href= '';">
+				<div class="box">
+					<i class="fa fa-home fa-3x icon" style="float: left; padding-top: .5%;"></i>
+					<div class="inside-box">
+						<span class="medium" style="font-family: Raleway;">Rua da Prata, 3º Esq. Lisboa, 1000-440</span>
+					</div>
 				</div>
-			</div>
+			</a>
 			<a class="tiny" onclick = "location.href= '';"><span style="float:right;">Manage my houses ></span></a>
 		</div>
 
 		<div class="section">
-			<p><br>I'm staying at:</p>
-			<div class="box">
-				<i class="fa fa-plane fa-3x icon" style="color: #388E3C;float: left;"></i>
-				<div class="inside-box">
-					<span class="medium" style="font-family: Raleway;">94 Baker Street London, NW1 6XE</span>
+			<p class="medium">I'm staying at:</p>
+			<a onclick = "location.href= '/going_away';">
+				<div class="box" style="border-left: 5px solid #388E3C;">
+					<i class="fa fa-plane fa-3x icon" style="color: #388E3C;float: left;padding-top: .5%;"></i>
+					<div class="inside-box">
+						<span class="medium">94 Baker Street London, NW1 6XE</span>
+					</div>
 				</div>
-			</div>
+			</a>
 			<a class="tiny" onclick = "location.href= '/going_away';"><span style="float:right;">Check this stay ></span></a>
 		</div>
 	</div>
