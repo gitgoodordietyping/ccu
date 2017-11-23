@@ -1,6 +1,19 @@
 <template name="home">
-	<h1> energy on the go </h1>
-	<div class="imgcontainer">
-		<img src="Intro.png" />
+	<div class="h_center">
+		<h1 id="appname"> Energy on the go </h1>
+		<div class="imgcontainer">
+			<img src="Intro.png" />
+		</div>
+		<form action="Dashboard" method="post">
+			<h4 id="log">Login:</h4>
+				<input name="username" type="text" id="un" placeholder="Username"><br>
+				<input name="password" type="password" id="pwd" placeholder="Password">	<br>
+			
+			<br>
+			<input class="h_right" type="submit" id="submition" value="GO >">
+		</form>
+	
+		<h3 id="h_h3">or</h3>
+		<a id="h_a" href="SignUp">Create an account</a>
 	</div>
 </template>

@@ -483,3 +483,199 @@ h2 {
 }
 
 /* PAYMENT SELECTION OVER */
+
+/* SIGNUP START */
+  
+
+  #su_h1 {
+    color:white;
+    font-family: Raleway;
+  }
+
+  #su_h3 {
+  color:white;
+  font-family: Raleway;
+    overflow: hidden;
+    text-align: center;
+  }
+  #su_h3:before,
+  #su_h3:after {
+    background-color:white;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 30%;
+  }
+  #su_h3:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  #su_h3:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+  
+  #su_div {
+    font-size: 100%;
+    font-family: Raleway;
+    line-height: 2.0
+  }
+  
+  .su_label, .su_input {
+    vertical-align: middle;
+    display: block;
+  }
+  
+  .su_input {
+    font-size: 100%;
+    color: white;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+  }
+
+  .su_label {
+    font-family: 'Raleway';
+    margin-bottom: 6%;
+    vertical-align: middle;
+  }
+  
+  #su_p {
+    font-family: 'Raleway';
+    color:white;
+    font-size: 110%;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  
+  .su_i {
+    color: white;
+  }
+  
+  
+  .su_button{
+    background-color: transparent;
+    border:none;
+    font-size: 100%;
+    color: white;}
+  
+  ::-webkit-input-placeholder { color: white; }
+  ::-moz-placeholder {color: white; }
+  :-ms-input-placeholder { color: white; } 
+  :-o-input-placeholder { color: white; }
+/* SIGNUP OVER */
+
+/* HOME START */
+
+#home {
+    font-family: 'Raleway';
+    font-size: 100%;
+    background-color:#D32F2F;
+  }
+
+  #submition{
+    margin-right: 0px;
+  }
+  .h_center {
+    text-align: center;
+    width: 60%;
+    
+  }
+  .h_right{
+    margin-right: 5%
+    text-align:right;
+  }
+  
+  #h_a{
+    color:white;
+    text-align: center;
+    border-bottom: 2px solid white;
+  }
+  
+  #h_a:link{
+    color: white;
+    text-decoration: none;
+  }
+  
+  #h_a:visited{
+    color:white;
+  }
+
+  #h_label {
+    font-family: 'Raleway';
+    margin-bottom: 6%;
+    vertical-align: middle;
+  }
+  
+  #un{
+    font-size: 100%;
+    color: white;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+  }
+  
+  #pwd{
+    font-size: 100%;
+    color: white;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+  }
+
+  #submition{
+    font-size: 100%;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+
+  #log{
+    font-family: 'Raleway';
+    color:white;
+    font-size: 20px;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  #appname{
+    font-family: 'Raleway';
+    color:white;
+    font-size: 30px;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  
+  #h_h3 {
+  color:white;
+  font-family: Raleway;
+    overflow: hidden;
+    text-align: center;
+  }
+  #h_h3:before,
+  #h_h3:after {
+    background-color:white;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 10%;
+  }
+  #h_h3:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  #h_h3:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+/* HOME OVER */
