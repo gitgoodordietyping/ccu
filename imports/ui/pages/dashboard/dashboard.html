@@ -1,69 +1,5 @@
 <template name="dashboard">
-	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
-
-	<style>
-		body{
-			font-family: Raleway;
-    		padding: 30px;
-    		overflow: hidden;
-    		position: absolute;
-		}
-
-		html { overflow-y: scroll; }
-
-		.balance{
-			height: 10%;
-			width: auto;
-			margin-bottom: 20px;
-		}
-
-		#current_balance{
-			float: right;
-			text-align: center;
-		}
-
-		p {
-			margin: 0;
-		}
-
-		.big {
-			font-size: 25px;
-		}
-
-		.medium {
-			font-size: 18px;
-		}
-
-		.small {
-			font-size: 12px;
-		}
-
-		.tiny {
-			font-size: 10px;
-		}
-
-		.box {
-			margin-top: 10px;
-		}
-
-		.inside-box {
-			margin-left: 60px;
-		}
-
-		.icon {
-			font-size: 50px;
-		}
-
-		.section {
-			margin-top: 20px;
-		}
-
-		a span {
-			margin-top: 10px;
-		}
-	</style>
-
-
+		
 	<div class = "balance">
 		<img id = "fuel_meter" style="width: 50%;" src="/img/fuel_meter.png">
 
@@ -108,7 +44,7 @@
 					<span class="medium" style="font-family: Raleway;">94 Baker Street London, NW1 6XE</span>
 				</div>
 			</div>
-			<a class="tiny" onclick = "location.href= '';"><span style="float:right;">Check this stay ></span></a>
+			<a class="tiny" onclick = "location.href= '/going_away';"><span style="float:right;">Check this stay ></span></a>
 		</div>
 	</div>
 
