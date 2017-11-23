@@ -351,6 +351,11 @@ a span {
   background: linear-gradient(to right, #9E9E9E , white);
   float: left;
 }
+
+#contactNumber {
+	margin-left: 7%;
+	float: left;
+}
 /* CONTACTS OVER */
 
 /* SETTINGS START */
